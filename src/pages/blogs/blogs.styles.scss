@@ -1,3 +1,27 @@
+$background-color: #222222;
+$color-white: #fff;
+$color-black: #000;
+$color-write: #898989;
+$color-grey: grey;
+$color-grey-light: #333333;
+$primary-color: orangered;
+.blogs {
+  padding: 3rem 8%;
+  &__header {
+    margin-bottom: 8rem;
+    h2 {
+      font-size: 26px;
+      font-weight: 500;
+      line-height: 28px;
+    }
+    p {
+      font-size: 16px;
+      color: $color-write;
+      font-weight: 200;
+      margin-top: 10px;
+    }
+  }
+}
 .yellow {
   background-color: yellow;
   margin: none;

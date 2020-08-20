@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default class Navbar extends Component {
   render() {
     return (
-      <nav className="navbar navbar-expand-md fixed-top">
+      <nav className="navbar navbar-expand-md">
         <Link className="navbar-brand" to="/">
           <img src={Logo} alt="Logo" />
         </Link>
