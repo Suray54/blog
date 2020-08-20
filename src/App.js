@@ -12,6 +12,7 @@ export default class App extends Component {
         <Navbar />
         <div className="space"></div>
         <Switch>
+          <Route exact path="/blog" component={Blogs} />
           <Route exact path="/" component={Blogs} />
           <Route exact path="/login" component={Auth} />
         </Switch>
