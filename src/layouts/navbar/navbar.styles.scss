@@ -1,0 +1,66 @@
+$background-color: #222222;
+$color-white: #fff;
+$color-black: #000;
+$color-grey: grey;
+$color-grey-light: #333333;
+$primary-color: orangered;
+
+.navbar {
+  text-transform: capitalize;
+  padding: 3rem 8%;
+
+  & img {
+    width: 8rem;
+  }
+
+  &-nav {
+    & .nav-item {
+      &:not(:first-child) {
+        margin-left: 3rem;
+      }
+      .nav-link {
+        font-size: 1.4rem;
+        color: $primary-color;
+        letter-spacing: 3px;
+        line-height: 3rem;
+        transition: transform 0.3s ease-in-out;
+        &:hover {
+          @media only screen and (max-width: 995px) {
+            transform: none;
+          }
+          transform: scale(1.2);
+          color: $primary-color;
+        }
+      }
+
+      & .social {
+        @media only screen and (max-width: 785px) {
+          display: none;
+        }
+        display: flex;
+        justify-content: space-evenly;
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          font-size: 16px;
+          text-decoration: none;
+        }
+        &__item {
+          &:hover {
+            background-color: $color-white;
+            color: $primary-color;
+          }
+          &:not(:first-child) {
+            margin-left: 10px;
+          }
+          height: 40px;
+          width: 40px;
+          background: $primary-color;
+          color: white;
+        }
+      }
+    }
+  }
+}
