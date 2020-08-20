@@ -21,7 +21,7 @@ export default class BlogOverview extends Component {
             <i class="fas fa-calendar-week"></i> 2020/8/20
           </div>
           <div className="blog-overview__details-tag">
-            <i class="fas fa-folder"></i>web developement
+            <i class="fas fa-folder"></i>Web Developement
           </div>
         </div>
       </div>

@@ -6,9 +6,9 @@ export default class Navbar extends Component {
   render() {
     return (
       <nav className="navbar navbar-expand-md">
-        <Link className="navbar-brand" to="/">
+        <a href="https://suray54.github.io/Rezume/">
           <img src={Logo} alt="Logo" />
-        </Link>
+        </a>
 
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
