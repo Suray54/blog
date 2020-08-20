@@ -11,6 +11,7 @@ export default class BlogOverview extends Component {
           <div className="blog-overview__details-header">
             RoadMap of Front-End Developer
           </div>
+
           <p className="blog-overview__details-detail">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti,
             minima magnam harum deleniti hic suscipit optio praesentium officiis

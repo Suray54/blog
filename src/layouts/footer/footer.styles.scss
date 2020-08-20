@@ -1,0 +1,31 @@
+$background-color: #222222;
+$color-white: #fff;
+$color-black: #000;
+$color-write: #898989;
+$color-grey: grey;
+$color-grey-light: #333333;
+$primary-color: orangered;
+$search-color: #eee;
+.footer {
+  background-color: $search-color;
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: center;
+
+  p {
+    color: $color-grey;
+    font-size: 1.4rem;
+    font-weight: 200;
+    line-height: 27.2px;
+    a {
+      margin-left: 5px;
+      text-decoration: none;
+      font-weight: 700;
+      color: $primary-color;
+      text-transform: uppercase;
+      &:hover {
+        color: $color-black;
+      }
+    }
+  }
+}
