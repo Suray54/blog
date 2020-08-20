@@ -11,9 +11,7 @@ export default class Blogs extends Component {
           <div className="col-md-8">
             <Route exact path={`${match.path}`} component={BlogOverview} />
           </div>
-          <div className="col-md-4 yellow">
-            Side-Bar for both Single and Blogs
-          </div>
+          <div className="col-md-4 yellow">Side-Bar</div>
         </div>
       </div>
     );
