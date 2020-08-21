@@ -1,31 +1,39 @@
-import React, { Component } from "react";
+import React from "react";
 import "./blog-overview.styles.scss";
 import html from "../../assets/html.jpg";
 
-export default class BlogOverview extends Component {
-  render() {
-    return (
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
+import { selectBlogBlogs } from "../../redux/blog/blog.selector";
+
+const BlogOverview = ({ blogs }) => (
+  <div className="div">
+    {blogs.map((blog) => (
       <div className="blog-overview">
         <img src={html} alt="blog-overview__image" />
         <div className="blog-overview__details">
-          <div className="blog-overview__details-header">
-            RoadMap of Front-End Developer
-          </div>
+          <div className="blog-overview__details-header">{blog.header}</div>
 
-          <p className="blog-overview__details-detail">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti,
-            minima magnam harum deleniti hic suscipit optio praesentium officiis
-            dolor. Reprehenderit dignissimos nisi illum libero vel asperiores
-            alias unde. Odit, repellat?
-          </p>
+          <p className="blog-overview__details-detail">{blog.details}</p>
           <div className="blog-overview__details-date">
-            <i class="fas fa-calendar-week"></i> 2020/8/20
+            <i class="fas fa-calendar-week"></i> {blog.date}
           </div>
           <div className="blog-overview__details-tag">
-            <i class="fas fa-folder"></i>Web Developement
+            <i class="fas fa-folder"></i>
+            {blog.tag}
           </div>
         </div>
       </div>
-    );
-  }
-}
+    ))}
+  </div>
+);
+
+const mapStateToProps = createStructuredSelector({
+  blogs: selectBlogBlogs,
+});
+
+//const mapStateToProps = (state) => ({
+// sections: state.directory.sections,
+//});
+
+export default connect(mapStateToProps)(BlogOverview);

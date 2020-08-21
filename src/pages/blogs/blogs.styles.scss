@@ -23,11 +23,15 @@ $search-color: #eee;
     }
   }
   & .sidebar {
+    margin-top: 20px;
     .search-box {
+      @media only screen and (max-width: 980px) {
+        display: none;
+      }
       border: none;
       background-color: $search-color;
       outline: none;
-      width: 90%;
+      width: 220px;
       padding: 8px;
       line-height: 25px;
       margin-bottom: 40px;
