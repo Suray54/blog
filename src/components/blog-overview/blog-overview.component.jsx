@@ -21,7 +21,7 @@ const BlogOverview = ({ blogs, match, history }) => (
         <div className="blog-overview__details">
           <div
             onClick={() =>
-              history.push(`${match.url}${blog.title.toLowerCase()}`)
+              history.push(`${match.url}/${blog.title.toLowerCase()}`)
             }
             className="blog-overview__details-header"
           >

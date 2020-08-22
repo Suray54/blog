@@ -18,7 +18,7 @@ export default class Blogs extends Component {
               render={() => <BlogOverview />}
             />
             <Route
-              path={`${match.path}:blogId`}
+              path={`${match.path}/:blogId`}
               render={(props) => <BlogSingle {...props} />}
             />
           </div>
