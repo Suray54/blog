@@ -14,11 +14,11 @@ export default class Blogs extends Component {
           <div className="col-lg-9">
             <Route
               exact
-              path={`${match.path}`}
+              path={`${match.path}/`}
               render={() => <BlogOverview />}
             />
             <Route
-              path={`${match.path}/:blogId`}
+              path={`${match.path}:blogId`}
               render={(props) => <BlogSingle {...props} />}
             />
           </div>
