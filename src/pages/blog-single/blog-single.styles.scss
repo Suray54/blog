@@ -1,0 +1,60 @@
+$background-color: #222222;
+$color-white: #fff;
+$color-black: #000;
+$color-grey: grey;
+$color-grey-light: #333333;
+$color-write: #898989;
+$primary-color: orangered;
+.blog-single {
+  &__img {
+    width: 80%;
+  }
+  margin: 0 5%;
+  &__header {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 26px;
+    margin: 3rem 0;
+
+    transition: all 0.3s;
+    &:hover {
+      color: $primary-color;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  &__detail {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: $color-write;
+    margin-bottom: 8rem;
+  }
+  &__display {
+    display: flex;
+    margin-bottom: 15px;
+    &-date {
+      i {
+        font-size: 16px;
+        margin-right: 5px;
+        color: $primary-color;
+      }
+      font-weight: 500;
+      font-size: 15px;
+
+      color: $color-write;
+    }
+    &-tag {
+      i {
+        font-size: 16px;
+        margin-right: 5px;
+        color: $primary-color;
+      }
+      font-size: 15px;
+      font-weight: 500;
+      margin-left: 20px;
+      color: $color-write;
+    }
+  }
+}

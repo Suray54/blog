@@ -3,22 +3,26 @@ import "./blogs.styles.scss";
 import { Route } from "react-router-dom";
 
 import BlogOverview from "../../components/blog-overview/blog-overview.component";
+import BlogSingle from "../blog-single/blog-single.component";
 export default class Blogs extends Component {
   render() {
     const { match } = this.props;
+    console.log(match);
     return (
       <div className="blogs">
-        <div className="blogs__header">
-          <h2>Blog</h2>
-          <p>
-            Everyday thoughts are presented here, <br />
-            Graphic Design, UI/UX, Web Design and Developement.
-          </p>
-        </div>
         <div className="row">
           <div className="col-lg-9">
-            <Route exact path={`${match.path}`} component={BlogOverview} />
+            <Route
+              exact
+              path={`${match.path}`}
+              render={() => <BlogOverview />}
+            />
+            <Route
+              path={`${match.path}/:blogId`}
+              render={(props) => <BlogSingle {...props} />}
+            />
           </div>
+
           <div className="col-lg-3 sidebar">
             <input
               className="search-box"

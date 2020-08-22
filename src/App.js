@@ -12,7 +12,7 @@ export default class App extends Component {
       <div>
         <Navbar />
         <Switch>
-          <Route exact path="/blog" component={Blogs} />
+          <Route path="/blog" component={Blogs} />
           <Route exact path="/" component={Blogs} />
           <Route exact path="/login" component={Auth} />
         </Switch>
