@@ -20,7 +20,7 @@ const BlogOverview = ({ blogs, match, history }) => (
         <img src={html} alt="blog-overview__image" />
         <div className="blog-overview__details">
           <div
-            onClick={() => history.push(`blog/${blog.title.toLowerCase()}`)}
+            onClick={() => history.push(`${blog.title.toLowerCase()}`)}
             className="blog-overview__details-header"
           >
             {blog.header}
