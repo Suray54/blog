@@ -13,7 +13,6 @@ export default class App extends Component {
         <Navbar />
         <Switch>
           <Route path="/blog" component={Blogs} />
-          <Route exact path="/" component={Blogs} />
           <Route exact path="/login" component={Auth} />
         </Switch>
         <Footer />
